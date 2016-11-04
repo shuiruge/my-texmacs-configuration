@@ -1492,9 +1492,9 @@
 ;  ("e var var" "<mathe>")
   ("e var var var" "<varepsilon>")
   ("e var var var var" "<backepsilon>")
-  ("v var var" "<varphi>")
+  ("v var" "<varphi>")
   ("f var" "<phi>")
-  ("f var var" "<phi>")
+  ("f var var" "<varphi>")
   ("g var" "<gamma>")
   ("g var var" "<matheuler>")
   ("h var" "<eta>")
@@ -1524,7 +1524,6 @@
   ("t var" "<tau>")
   ("u var" "<upsilon>")
   ("f var var" "<phi>")
-  ("v var" "<phi>")
   ("w var" "<omega>")
   ("w var var" "<mho>")
   ("x var" "<xi>")
@@ -1584,7 +1583,8 @@
   ("| >" "| <rangle>")             ; ket
   ("< |" "<langle> |")             ; bra
   ("< | >" "<langle> | <rangle>")  ; bracket
-  ("d a g" "<dagger>")           ; dagger
+  ("h b a r" "<hbar>")             ; hbar
+  ("d a g" "<dagger>")             ; dagger
   
   ;;; Define shortcut by doubling a key in main-region.
   ;;; Assuming that you never encounter such case where
@@ -1594,7 +1594,6 @@
   ;;; (You can input math "d d" by "d d <space> d d".)
   
   ;; general notations:
-  ("/ /" (make-fraction))          ; fraction
   ("f f" (make-fraction))          ; fraction (another)
   ("s s" (make-sqrt))              ; sqrt
   ("d d" "<mathd>")                ; derivative
@@ -1632,6 +1631,11 @@
   ;; Using 'space space' to go out of the tmp structure.
   ;; This can be established only in math-mode.
   ("space space" (structured-exit-right))
+
+  ;; Using 's h/l' to jump to the previous/next similar.
+  ;; "s" for "similar".
+  ("s h" (traverse-previous))
+  ("s l" (traverse-next))
   )
 
 ;; For the "how-to":
