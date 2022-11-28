@@ -5,7 +5,7 @@
 Run
 
 ```sh
-my ./my-init-texmacs.scm ~/.TeXmacs/progs/my-init-texmacs.scm
+cp ./my-init-texmacs.scm ~/.TeXmacs/progs/my-init-texmacs.scm
 ```
 
 Done!
