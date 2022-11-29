@@ -39,6 +39,11 @@
   ("e e" "<mathe>")                ; Euler constant
 ;  ("p p" "<mathpi>")               ; 3.14...
   ("i i" "<mathi>")                ; imaginary unit
+
+  ;; fonts:
+  ("m c" (make-with "font" "cal"))    ; mathcal
+  ("m b" (make-with "font" "Bbb"))    ; mathbb
+  ("m f" (make-with "font" "Euler"))  ; mathfrak
   
   ;; Some tabing order is unconvenient.
   ;; Ensure that the previous definitions have been
