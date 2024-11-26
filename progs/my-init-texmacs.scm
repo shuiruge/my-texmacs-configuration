@@ -58,6 +58,11 @@
   ;; Using 'space space' to go out of the tmp structure.
   ;; This can be established only in math-mode.
   ("space space" (structured-exit-right))
+  ;; Other shortcuts.
+  ("h h" (structured-exit-left))
+  ("k k" (structured-exit-left))
+  ("l l" (structured-exit-right))
+  ("j j" (structured-exit-right))
 
   ;; Using 's h/l' to jump to the previous/next similar.
   ;; "s" for "similar".

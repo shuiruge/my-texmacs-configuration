@@ -2,10 +2,5 @@
 
 ## Howto
 
-Run
+Copy the directories in this repository to `~/.TeXmacs/`. Done!
 
-```sh
-cp ./my-init-texmacs.scm ~/.TeXmacs/progs/my-init-texmacs.scm
-```
-
-Done!
